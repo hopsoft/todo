@@ -9,9 +9,10 @@
     "@shoelace-style/shoelace": "^2.0.0-beta.19",
     "cable_ready": "^4.4.0-pre1",
     "copy-webpack-plugin": "^6.1.1",
+    "debounced": "^0.0.5",
     "flexboxgrid": "^6.3.1",
     "stimulus": "^1.1.1",
-    "stimulus_reflex": "^3.3.0",
+    "stimulus_reflex": "3.3.0",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",

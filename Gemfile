@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -25,6 +27,7 @@ end
 
 group :development do
   gem "listen", "~> 3.2"
+  gem "magic_frozen_string_literal", "~> 1.1"
   gem "model_probe", "~> 1.0"
   gem "standardrb", "~> 1.0"
   gem "tmuxinator", "~> 2.0"
@@ -39,3 +42,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "annotate", "~> 3.1"

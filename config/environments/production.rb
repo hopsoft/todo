@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -48,7 +50,6 @@ Rails.application.configure do
   config.log_tags = [:request_id]
 
   # Use a different cache store in production.
-  # config.cache_store = :mem_cache_store
   config.cache_store = :redis_cache_store, {
     namespace: "todo_#{Rails.env}_cache",
     url: ENV["REDIS_CACHE_URL"],

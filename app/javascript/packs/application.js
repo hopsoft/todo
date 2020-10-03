@@ -17,6 +17,10 @@ require('channels')
 
 import '../stylesheets/app.scss'
 
+// setup debounced standard dom events
+import debounced from 'debounced'
+debounced.initialize()
+
 // import shoelace web components
 import { defineCustomElements, setAssetPath } from '@shoelace-style/shoelace'
 setAssetPath(document.currentScript.src)

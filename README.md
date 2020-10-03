@@ -1,24 +1,23 @@
-# README
+# Todo App Demo Showcasing CableReady, StimulusReflex, & Web Components
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Development
 
-Things you may want to cover:
+```sh
+git clone https://github.com/hopsoft/todo.git
+cd todo
+asdf local ruby 2.7.1
+asdf local nodejs 12.18.4
+bundle
+yarn
+bundle exec rails db:create db:migrate
+bundle exec raisl dev:cache
+bin/tmuxinator
+```
 
-* Ruby version
+### Coding Standards
 
-* System dependencies
+Standardize your code before pushing your code up.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```sh
+bin/standardize
+```

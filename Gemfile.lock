@@ -58,6 +58,9 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    annotate (3.1.1)
+      activerecord (>= 3.2, < 7.0)
+      rake (>= 10.4, < 14.0)
     ast (2.4.1)
     bindex (0.8.1)
     bootsnap (1.4.8)
@@ -99,6 +102,7 @@ GEM
     loofah (2.7.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
+    magic_frozen_string_literal (1.1.0)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
     marcel (0.3.3)
@@ -247,6 +251,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate (~> 3.1)
   bootsnap (~> 1.4)
   byebug
   cable_ready (~> 4.4.0.pre1)
@@ -255,6 +260,7 @@ DEPENDENCIES
   hiredis (~> 0.6.3)
   jbuilder (~> 2.7)
   listen (~> 3.2)
+  magic_frozen_string_literal (~> 1.1)
   model_probe (~> 1.0)
   pg (~> 1.2)
   pry-byebug (~> 3.9)
