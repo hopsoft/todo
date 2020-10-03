@@ -18,5 +18,8 @@
   "devDependencies": {
     "prettier-standard": "^16.4.1",
     "webpack-dev-server": "^3.11.0"
+  },
+  "resolutions": {
+    "stimulus_reflex/cable_ready": "4.4.0-pre1"
   }
 }
