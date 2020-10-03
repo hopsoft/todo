@@ -1,0 +1,13 @@
+<%= shoelace :card,
+  class: css_classes(required: "mt-small w-full relative", "shadow-lg": item.incomplete?, "opacity-50": item.completed?) do %>
+
+  <%= shoelace :switch,
+    checked: item.completed?, tooltip: "Toggle Completed",
+    data: { controller: "items", reflex: "click->items#toggle", id: item.id } do %>
+    <%= tag.span item.title, class: css_classes("line-through": item.completed?)  %>
+  <% end %>
+
+  <%= shoelace "icon-button",
+    name: "trash", class: "absolute top-0 right-0", tooltip: "Delete",
+    data: { controller: "items", reflex: "click->items#destroy", id: item.id } %>
+<% end %>
