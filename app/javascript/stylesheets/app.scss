@@ -5,6 +5,8 @@
   font-family: var(--sl-font-sans);
 }
 
+body { background-color: var(--sl-color-info-95); }
+
 section {
   border-top: solid 1px var(--sl-color-gray-90);
 }
@@ -32,6 +34,7 @@ section {
 .pt-xx-small { padding-top: var(--sl-spacing-xx-small); }
 .relative { position: relative; }
 .right-0 { right: 0 }
+.shadow-lg { box-shadow: var(--sl-shadow-large); }
 .text-large { font-size: var(--sl-font-size-large); }
 .text-medium { font-size: var(--sl-font-size-medium); }
 .text-small { font-size: var(--sl-font-size-small); }
